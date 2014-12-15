@@ -9,5 +9,8 @@
  */
 angular.module('thinkTalentOverlayApp')
   .controller('TTOverlayCtrl', function ($scope) {
-    	
+    	$scope.facebookShareClicked = function(){
+    		//fb.ui() method
+    		//console.log(post_id);
+    	};
   });
