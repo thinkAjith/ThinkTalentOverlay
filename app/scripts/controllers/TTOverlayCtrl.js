@@ -10,11 +10,11 @@
 angular.module('thinkTalentOverlayApp')
   .controller('TTOverlayCtrl', function ($scope) {
   		$scope.facebookShareValues = {
-  			fb_share_picture : "http://placehold.it/350x150",
+  			fb_share_picture : "http://placehold.it/100x100",
   			fb_share_name : "Test Facebook Share Name",
   			fb_share_link : "https://www.google.co.in/",
   			fb_share_caption : "Test Facebook Share Caption",
-  			fb_share_description : "Test Facebook Share Description"
+  			fb_share_description : "Test Facebook Share Description of a very very very long long long description goes here!!!!"
   		};
 
     	$scope.facebookShareClicked = function(){

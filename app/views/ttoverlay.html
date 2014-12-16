@@ -1,50 +1,38 @@
-<h4>
+<h4 class="borderBottom">
   <strong>Share with your friends about this Job</strong>
 </h4>
 
-<div class="panel panelBody">
-  <div class="panel-body">
+<div class="row paddingAll">
+  <div class="col-md-4 col-xs-4 col-sm-4 text-center">
+    <img class="facbook-logo" src="{{facebookShareValues.fb_share_picture}}"></img>
+  </div>
+
+  <div class="col-md-8 col-xs-8 col-sm-8">
     <div class="row">
-
-      <div class="col-md-3 col-xs-3 col-sm-3 text-center">
-        <img class="facbook-logo" src="images/fb_logo.png"></img>
-      </div>
-
-      <div class="col-md-6 col-xs-6 col-sm-6">
-        <div class="row">
-          <span class="font-18"><strong>{{facebookShareValues.fb_share_name}}</strong></span>
-        </div>
-        <div class="row">
-          <span class="font-10">{{facebookShareValues.fb_share_description}}</span>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-xs-3 col-sm-3 text-center">
-        <a class="btn btn-primary" ng-click="facebookShareClicked()">Share</a>
-      </div>
-
+      <span class="font-18"><strong>{{facebookShareValues.fb_share_name}}</strong></span>
+    </div>
+    <div class="row">
+      <span class="font-10">{{facebookShareValues.fb_share_description}}</span>
     </div>
   </div>
 </div>
+
 <div class="panel panelBody">
   <div class="panel-body">
     <div class="row">
-
-      <div class="col-md-3 col-xs-3 col-sm-3 text-center">
-        <img class="facbook-logo" src="http://www.gozohelicopterservices.com/linkedIn_logo_small.png"></img>
-      </div>
-
-      <div class="col-md-6 col-xs-6 col-sm-6">
-        <div class="row">
-          <span class="font-18"><strong>Share name</strong></span>
+      <div class="row">
+        <div class="text-center">
+          <h5><strong>Share via social media</strong></h5>
         </div>
-        <div class="row">
-          <span class="font-10">Share description</span>
-        </div>
-      </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 text-center">
+          <a class="onHover" ng-click="facebookShareClicked()" href>
+            <img src="images/fb_logo.png">
+          </a>
 
-      <div class="col-md-3 col-xs-3 col-sm-3 text-center">
-       <a class="btn btn-primary" ng-click="linkedInShareClicked()">Share</a>
+          <a class="onHover" ng-click="linkedInShareClicked()" href>
+            <img src="images/li_logo.png">
+          </a>
+        </div>
       </div>
 
     </div>
